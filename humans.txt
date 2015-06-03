@@ -5,6 +5,9 @@
 
     <name> -- <role> -- <twitter>
 
+    Adam Webb -- Lead Developer
+    Brando McCune -- CMO
+
 # THANKS
 
     <name>
