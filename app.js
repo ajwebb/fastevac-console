@@ -38,8 +38,8 @@ app.get('/personnel', function(req, res) {
 	res.render('personnel.html');
 });
 
-app.get('/coordinators', function(req, res) {
-	res.render('coordinators.html');
+app.get('/groups', function(req, res) {
+	res.render('groups.html');
 });
 
 app.listen(port, function() {

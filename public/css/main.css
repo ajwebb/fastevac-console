@@ -4,9 +4,12 @@
    Author's custom styles
    ========================================================================== */
 
-.add-personnel-btn {
+/*.add-personnel-btn {
 	margin-bottom: 10px;
 }
 .import-records-btn {
 	margin-bottom: 10px;
+}*/
+.modal-dialog {
+	left: auto!important;
 }
