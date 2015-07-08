@@ -180,8 +180,74 @@
       					<h3 class="page-header"><i class="fa fa fa-bars"></i> Dashboard</h3>
       				</div>
       			</div>
-            <!-- page start-->
+            <!-- page start--
             Dashboard content goes here
+
+            <div class="col-md-4 portlets">
+              <!-- Widget -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="pull-left">Message</div>
+                  <div class="widget-icons pull-right">
+                    <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
+                    <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                  </div>  
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="panel-body">
+                  <!-- Widget content -->
+                  <div class="padd sscroll">
+                    
+                    <ul class="chats">
+
+                      <!-- Chat by us. Use the class "by-me". -->
+                      <li class="by-me">
+                        <!-- Use the class "pull-left" in avatar -->
+                        <div class="avatar pull-left">
+                          <img src="img/user.jpg" alt=""/>
+                        </div>
+
+                        <div class="chat-content">
+                          <!-- In meta area, first include "name" and then "time" -->
+                          <div class="chat-meta">John Smith <span class="pull-right">30 minutes ago</span></div>
+                            Requested assistance at <a href="#" onclick="window.open('https://www.google.com/maps?q=33.654184,-117.81023')">location</a>
+                            <button type="submit" class="btn btn-info">Message</button>
+                          <div class="clearfix"></div>
+                        </div>
+                      </li> 
+
+                      <!-- Chat by other. Use the class "by-other". -->
+                      <li class="by-me">
+                        <!-- Use the class "pull-right" in avatar -->
+                        <div class="avatar pull-left">
+                          <img src="img/user22.png" alt=""/>
+                        </div>
+
+                        <div class="chat-content">
+                          <!-- In the chat meta, first include "time" then "name" -->
+                          <div class="chat-meta">Jennifer Smith <span class="pull-right">2 hours ago</span></div>
+                            Checked in at <a href="#" onclick="window.open('https://www.google.com/maps?q=33.654184,-117.81023')">location</a>
+                            <button type="submit" class="btn btn-info">Message</button>
+                          <div class="clearfix"></div>
+                        </div>
+                      </li>   
+
+                    </ul>
+
+                  </div>
+                  <!-- Widget footer -->
+                  <!--<div class="widget-foot">
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Type your message here...">
+                        </div>
+                        <button type="submit" class="btn btn-info">Send</button>
+                      </form>
+                  </div>-->
+                </div>
+              </div> 
+            </div>
             <!-- page end-->
         </section>
       </section>
