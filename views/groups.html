@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Personnel">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <title>Groups</title>
 
@@ -22,7 +22,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/groups.css" rel="stylesheet">
     <!-- datatables styling -->
-    <link rel="stylesheet" type="text/css" href="/plugins/Datatables/css/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
@@ -123,9 +123,6 @@
                                 <a href="#"><i class="icon_profile"></i> My Profile</a>
                             </li>
                             <li>
-                                <a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
-                            </li>
-                            <li>
                                 <a href="login"><i class="icon_key_alt"></i> Log Out</a>
                             </li>
                             <li>
@@ -151,16 +148,17 @@
                           <span>Dashboard</span>
                       </a>
                   </li>
-                  <li class="sub-menu" class="">
-                      <a href="javascript:;" class="">
+                  <li class="">
+                      <a href="personnel" class="">
                           <i class="icon_table"></i>
                           <span>Personnel</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
-                      <ul class="sub">
-                          <li><a class="" href="personnel">All</a></li>
-                          <li class="active"><a class="" href="groups">Groups</a></li>
-                      </ul>
+                  </li>
+                  <li class="active">
+                      <a href="groups" class="">
+                          <i class="icon_group"></i>
+                          <span>Groups</span>
+                      </a>
                   </li>
                   <li class="">                     
                       <a class="" href="reports">
@@ -179,11 +177,6 @@
     		  <div class="row">
     				<div class="col-lg-12">
     					<h3 class="page-header"><i class="fa fa-table"></i> Evacuation Groups</h3>
-              <ol class="breadcrumb">
-                <li><i class="fa fa-home"></i><a href="dashboard">Dashboard</a></li>
-                <li><i class="fa fa-table"></i>Personnel</li>
-                <li><i class="fa fa-th-list"></i>Groups</li>
-              </ol>
     				</div>
     			</div>
               <!-- page start-->
@@ -301,8 +294,8 @@
     <script src="js/vendor/jquery.nicescroll.js" type="text/javascript"></script><!--custome script for all page-->
 
     <!-- datatables js -->
-    <script type="text/javascript" charset="utf8" src="/plugins/Datatables/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="/plugins/Datatables/js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
 
   </body>
 </html>

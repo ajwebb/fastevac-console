@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Personnel">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <title>Personnel</title>
 
@@ -22,7 +22,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/personnel.css" rel="stylesheet">
     <!-- datatables styling -->
-    <link rel="stylesheet" type="text/css" href="/plugins/Datatables/css/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
@@ -45,6 +45,18 @@
             <!--logo start-->
             <a href="dashboard" class="logo">Fast<span class="lite">Evac</span></a>
             <!--logo end-->
+
+            <div class="nav search-row" id="top_menu">
+                <!--  search form start -->
+                <ul class="nav top-menu">                    
+                    <li>
+                        <form class="navbar-form">
+                            <input class="form-control" placeholder="Search" type="text">
+                        </form>
+                    </li>                    
+                </ul>
+                <!--  search form end -->                
+            </div>
 
             <div class="top-nav notification-row">                
                 <!-- notificatoin dropdown start-->
@@ -99,9 +111,6 @@
                     <!-- user login dropdown start-->
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <!--<span class="profile-ava">
-                                <img alt="" src="img/avatar1_small.jpg">
-                            </span>-->
                             <span class="username">Adam Webb</span>
                             <b class="caret"></b>
                         </a>
@@ -109,9 +118,6 @@
                             <div class="log-arrow-up"></div>
                             <li class="eborder-top">
                                 <a href="#"><i class="icon_profile"></i> My Profile</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
                             </li>
                             <li>
                                 <a href="login"><i class="icon_key_alt"></i> Log Out</a>
@@ -139,16 +145,17 @@
                           <span>Dashboard</span>
                       </a>
                   </li>
-                  <li class="sub-menu" class="">
-                      <a href="javascript:;" class="">
+                  <li class="active">
+                      <a href="personnel" class="">
                           <i class="icon_table"></i>
                           <span>Personnel</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
-                      <ul class="sub">
-                          <li class="active"><a class="" href="personnel">All</a></li>
-                          <li><a class="" href="groups">Groups</a></li>
-                      </ul>
+                  </li>
+                  <li class="">
+                      <a href="groups" class="">
+                          <i class="icon_group"></i>
+                          <span>Groups</span>
+                      </a>
                   </li>
                   <li class="">                     
                       <a class="" href="reports">
@@ -167,11 +174,6 @@
       		  <div class="row">
       				<div class="col-lg-12">
       					<h3 class="page-header"><i class="fa fa-table"></i> Personnel</h3>
-                <ol class="breadcrumb">
-                  <li><i class="fa fa-home"></i><a href="dashboard">Dashboard</a></li>
-                  <li><i class="fa fa-table"></i>Personnel</li>
-                  <li><i class="fa fa-th-list"></i>All</li>
-                </ol>
       				</div>
       			</div>
               <!-- page start-->
@@ -274,7 +276,7 @@
                           </div>
                           <div class="modal-body">
 
-                            Personnel record will be deleted for: 'Some Name'
+                            Personnel record will be deleted for: 'User Name'
 
                           </div>
                           <div class="modal-footer">
@@ -514,8 +516,8 @@
     <script src="js/vendor/jquery.nicescroll.js" type="text/javascript"></script>
 
     <!-- datatables js -->
-    <script type="text/javascript" charset="utf8" src="/plugins/Datatables/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="/plugins/Datatables/js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
 
   </body>
 </html>
