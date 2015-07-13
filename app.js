@@ -22,6 +22,36 @@ app.get('/', function(req, res) {
     res.render('index.html');
 });
 
+app.get('/dashboard', function(req, res) {
+	res.render('index.html');
+});
+
+app.get('/login', function(req, res) {
+	res.render('login.html');
+});
+
+app.get('/reports', function(req, res) {
+	res.render('reporting.html');
+})
+
+app.get('/personnel', function(req, res) {
+	res.render('personnel.html');
+});
+
+app.get('/groups', function(req, res) {
+	res.render('groups.html');
+});
+
+app.get('/authenticate', function(req, res) {
+	var validLogin = true;
+	if (validLogin) {
+		res.redirect('/dashboard')
+	}
+	else {
+		res.redirect('/login');
+	}
+})
+
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port);
 });
