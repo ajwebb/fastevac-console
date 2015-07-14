@@ -45,12 +45,12 @@ app.get('/groups', function(req, res) {
 app.get('/authenticate', function(req, res) {
 	var validLogin = true;
 	if (validLogin) {
-		res.redirect('/dashboard')
+		res.redirect('/dashboard');
 	}
 	else {
 		res.redirect('/login');
 	}
-})
+});
 
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port);
