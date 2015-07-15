@@ -28,7 +28,6 @@
   "homepage": "http://FastEvac.com",
   "dependencies": {
     "ejs": "^2.3.1",
-    "express": "^4.12.4",
-    "mysql": "^2.7.0"
+    "express": "^4.12.4"
   }
 }
