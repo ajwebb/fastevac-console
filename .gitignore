@@ -10,3 +10,12 @@ pids
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+
+# bower compoents
+bower_components
+
+# distribution directory for production
+dist
+
+# testing directory
+test
