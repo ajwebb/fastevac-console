@@ -1,0 +1,86 @@
+[
+{
+  "id": 1,
+  "fullName": "Angeline Mcclain",
+  "group": "Warehouse",
+  "emailAddr": "angeline.frieda@thick.com",
+  "phoneNo": "176-026-5992"
+},
+{
+  "id": 2,
+  "fullName": "John L Hall",
+  "group": "Warehouse",
+  "emailAddr": "jlh@chief.info",
+  "phoneNo": "671-555-5992"
+},
+{
+  "id": 3,
+  "fullName": "Sung Carlson",
+  "group": "Warehouse",
+  "emailAddr": "ione.gisela@high.org",
+  "phoneNo": "724-639-4784"
+},
+{
+  "id": 4,
+  "fullName": "Bryon Osborne",
+  "group": "Warehouse",
+  "emailAddr": "sol.raleigh@language.edu",
+  "phoneNo": "180-456-0056"
+},
+{
+  "id": 5,
+  "fullName": "Dalia Marquez",
+  "group": "Warehouse",
+  "emailAddr": "dmarquez@chief.info",
+  "phoneNo": "690-601-1922"
+},
+{
+  "id": 6,
+  "fullName": "Selina Fitzgerald",
+  "group": "Warehouse",
+  "emailAddr": "moshe.mikel@parcelpart.info",
+  "phoneNo": "922-810-0915"
+},
+{
+  "id": 7,
+  "fullName": "Abraham Avery",
+  "group": "Warehouse",
+  "emailAddr": "harvey.jared@pullpump.org",
+  "phoneNo": "511-175-7115"
+},
+{
+  "id": 8,
+  "fullName": "Caren Mcdowell",
+  "group": "Warehouse",
+  "emailAddr": "valeria@hookhope.org",
+  "phoneNo": "970-147-5550"
+},
+{
+  "id": 9,
+  "fullName": "Owen Bingham",
+  "group": "Shipping",
+  "emailAddr": "obingham@firstfish.info",
+  "phoneNo": "934-118-6046"
+},
+{
+  "id": 10,
+  "fullName": "Ahmed Dean",
+  "group": "Shipping",
+  "emailAddr": "lakesha.geri.allene@recordred.com",
+  "phoneNo": "338-081-8817"
+},
+{
+  "id": 11,
+  "fullName": "Mario Norris",
+  "group": "Shipping",
+  "emailAddr": "mildred@hour.info",
+  "phoneNo": "945-547-5302"
+},
+{
+  "id": 12,
+  "fullName": "Sean Valdez",
+  "group": "Shipping",
+  "emailAddr": "svaldez@recordred.com",
+  "phoneNo": "338-555-7188"
+}
+]

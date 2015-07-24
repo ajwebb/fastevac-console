@@ -1,0 +1,120 @@
+<div ng-controller="GroupCtrl as groupDisplay">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3 class="page-header"><i class="fa fa-table"></i> Evacuation Groups</h3>
+    </div>
+  </div>
+
+  <a class="btn btn-primary add-group-btn" ng-click="groupDisplay.addGroup()" title="Create Additional Groups"><span class="icon_plus_alt2"></span> Add Group</a>
+
+  <table datatable="ng" dt-options="groupDisplay.dtOptions" dt-column-defs="groupDisplay.dtColumnDefs" class="table table-striped table-bordered" width="100%">
+      <thead>
+      <tr>
+          <th>ID</th>
+          <th><i class="icon_group"></i> Group</th>
+          <th><i class="icon_profile"></i> Evacuation Coordinator</th>
+          <th> No of Members</th>
+          <th><i class="icon_cogs"></i> Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="group in groupDisplay.groups">
+          <td>{{ group.id }}</td>
+          <td>{{ group.groupName }}</td>
+          <td>{{ group.evacCoordinator }}</td>
+          <td>{{ group.membersCount }}</td>
+          <td>
+              <button type="button" ng-click="groupDisplay.editGroup($index)" class="btn btn-success"><i class="icon_pencil-edit"></i></button>
+              <button type="button" ng-click="groupDisplay.deleteGroup($index)" class="btn btn-danger"><i class="icon_close_alt2"></i></button>
+          </td>
+      </tr>
+      </tbody>
+  </table>
+</div>
+
+<script type="text/ng-template" id="addGroup.html">
+  <div class="modal-header">
+      <button aria-hidden="true" ng-click="cancel()" class="close" type="button">×</button>
+      <h4 class="modal-title">Add Group</h4>
+  </div>
+  <div class="modal-body">
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label for="inputName" class="col-lg-2 control-label">Name</label>
+          <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputName" placeholder="Group Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-lg-2" for="inputSuccess">Coordinator</label>
+          <div class="col-lg-10">
+              <select class="form-control m-bot15">
+                <option>-- Select Evacuation Coordinator --</option>
+                <option ng-repeat="person in personnel">{{person}}</option>
+              </select>
+          </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-lg-2" for="inputSuccess">Members</label>
+              <div class="col-lg-10">
+                  <select multiple class="form-control">
+                    <option ng-repeat="person in personnel">{{person}}</option>
+                  </select>
+              </div>
+          </div>
+        <button type="submit" ng-click="submitAdd()" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+</script>
+
+<script type="text/ng-template" id="editGroup.html">
+  <div class="modal-header">
+      <button aria-hidden="true" ng-click="cancel()" class="close" type="button">×</button>
+      <h4 class="modal-title">Edit Group</h4>
+  </div>
+  <div class="modal-body">
+      <form class="form-horizontal" role="form">
+
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Name</label>
+            <div class="col-lg-10">
+                <p class="form-control-static" id="edit_group_name_field">{{group.groupName}}</p>
+            </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-lg-2" for="inputSuccess">Coordinator</label>
+          <div class="col-lg-10">
+              <select class="form-control m-bot15">
+                <option>-- Select Evacuation Coordinator --</option>
+                <option ng-repeat="person in personnel">{{person}}</option>
+              </select>
+          </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-lg-2" for="inputSuccess">Members</label>
+              <div class="col-lg-10">
+                  <select multiple class="form-control">
+                    <option ng-repeat="person in personnel">{{person}}</option>
+                  </select>
+              </div>
+          </div>
+        <button type="submit" ng-click="submitEdit()" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+</script>
+
+<script type="text/ng-template" id="deleteGroup.html">
+  <div class="modal-header">
+      <button aria-hidden="true" ng-click="cancel()" class="close" type="button">×</button>
+      <h4 class="modal-title">Delete Group?</h4>
+  </div>
+  <div class="modal-body">
+
+    The evacuation group: <strong>{{group.groupName}}</strong> will be deleted
+
+  </div>
+  <div class="modal-footer">
+      <button class="btn btn-danger" ng-click="submitDelete()" type="button" id="del_group">Confirm</button>
+  </div>
+</script>
+

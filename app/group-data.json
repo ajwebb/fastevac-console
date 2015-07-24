@@ -1,0 +1,14 @@
+[
+{
+  "id": 1,
+  "groupName": "Shipping",
+  "evacCoordinator": "Angeline Mcclain",
+  "membersCount": 4
+},
+{
+  "id": 2,
+  "groupName": "Warehouse",
+  "evacCoordinator": "Owen Bingham",
+  "membersCount": 8
+}
+]
