@@ -16,3 +16,6 @@ bower_components
 
 # distribution directory for production
 dist
+
+# .tmp directory
+.tmp
